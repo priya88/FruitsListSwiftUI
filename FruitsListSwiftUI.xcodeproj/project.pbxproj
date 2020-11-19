@@ -11,6 +11,8 @@
 		DD725222256677E90004D8C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD725221256677E90004D8C0 /* ContentView.swift */; };
 		DD725224256677EC0004D8C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD725223256677EC0004D8C0 /* Assets.xcassets */; };
 		DD725227256677EC0004D8C0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD725226256677EC0004D8C0 /* Preview Assets.xcassets */; };
+		DD7252302567132F0004D8C0 /* Fruit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD72522F2567132F0004D8C0 /* Fruit.swift */; };
+		DD7252332567175B0004D8C0 /* FruitDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7252322567175A0004D8C0 /* FruitDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		DD725223256677EC0004D8C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD725226256677EC0004D8C0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DD725228256677EC0004D8C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD72522F2567132F0004D8C0 /* Fruit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruit.swift; sourceTree = "<group>"; };
+		DD7252322567175A0004D8C0 /* FruitDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			children = (
 				DD72521F256677E90004D8C0 /* FruitsListSwiftUIApp.swift */,
 				DD725221256677E90004D8C0 /* ContentView.swift */,
+				DD72522F2567132F0004D8C0 /* Fruit.swift */,
+				DD7252322567175A0004D8C0 /* FruitDetailsView.swift */,
 				DD725223256677EC0004D8C0 /* Assets.xcassets */,
 				DD725228256677EC0004D8C0 /* Info.plist */,
 				DD725225256677EC0004D8C0 /* Preview Content */,
@@ -138,6 +144,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD7252332567175B0004D8C0 /* FruitDetailsView.swift in Sources */,
+				DD7252302567132F0004D8C0 /* Fruit.swift in Sources */,
 				DD725222256677E90004D8C0 /* ContentView.swift in Sources */,
 				DD725220256677E90004D8C0 /* FruitsListSwiftUIApp.swift in Sources */,
 			);

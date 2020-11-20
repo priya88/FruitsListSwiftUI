@@ -11,7 +11,7 @@ struct ContentView: View {
     
     // fruitsListData: A sample data for fruits list.
     
-    var fruitsList = fruitsListData
+    @State private var fruitsList = fruitsListData
     
     var body: some View {
         
@@ -19,17 +19,36 @@ struct ContentView: View {
         
         NavigationView {
             
-            // List will itearte the fruitsList and add the cell for each fruit in data list.
+            // List will iterate the fruitsList and add the cell for each fruit in data list.
             
-            List(fruitsList) {aFruit in
+            List {
+                ForEach(fruitsList) { aFruit in
+                    
+                    // Custom cell to display fruit data
+                    
+                    FruitCell(fruit: aFruit)
+                }
                 
-                // Custom cell to display fruit data
+                // To delete a row
                 
-                FruitCell(fruit: aFruit)
+                .onDelete(perform: { indexSet in
+                    fruitsList.remove(atOffsets: indexSet)
+                })
+                
+                // To move row from one index to another
+                // Use .onMove(perform: nil) to disbale moving of row in editing mode.
+                .onMove(perform: { indices, newOffset in
+                    fruitsList.move(fromOffsets: indices, toOffset: newOffset)
+                })
             }
             .navigationBarTitle("Fruits", displayMode: .large)
+            
+            // Add EDIT button to navigation bar to enable editing of rows
+            
+            .navigationBarItems(trailing: EditButton())
         }
     }
+ 
 }
 
 struct FruitCell: View {
